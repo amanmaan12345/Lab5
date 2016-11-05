@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+
+
+<h1>Users</h1>
+<table class="table table-striped">
+    <tr>
+        <th>Users</th>
+        <th>Id</th>
+    </tr>
+    <% for (var i = 0; i < users.length; i++) { %>
+    <tr>
+        <td><%= users[i].username %></td>
+        <td><%= users[i]._id %></td>
+
+    <% } %>
+</table>
+
+
+
+
+
+
+
+<% include partials/footer.ejs %>
